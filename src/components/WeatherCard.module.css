@@ -1,0 +1,54 @@
+.card {
+  /* border: 1px solid white; */
+  border-radius: 1rem;
+  margin: 2rem 5rem;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  color: white;
+  background-color: #0f182b;
+}
+
+/* city and items both child nodes of .card */
+
+.card:hover {
+  background-color: #16213b;
+}
+
+.city {
+  cursor: pointer;
+  flex: 1;
+}
+
+.items {
+  display: flex;
+  justify-content: space-between;
+  flex: 2;
+}
+
+.item {
+  text-align: center;
+}
+
+.info {
+  font-weight: bolder;
+  font-size: 1.25rem;
+}
+
+@media screen and (max-width: 750px) {
+  .card {
+    display: block;
+    margin: 2rem 2rem;
+  }
+
+  .city {
+    text-align: center;
+  }
+
+  .items {
+    padding-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+}
